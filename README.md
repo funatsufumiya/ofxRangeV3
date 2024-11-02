@@ -10,6 +10,10 @@ port of [range-v3](https://github.com/ericniebler/range-v3/) for [openFrameworks
 
 [https://ericniebler.github.io/range-v3/](https://ericniebler.github.io/range-v3/)
 
+## Note
+
+- `ofxRangeV3NamespaceExample` is an example of how to avoid conflicting `std::` namespace (because openFrameworks usually auto insert `using namespace std;`. This can be problem when use on C++20 or later.)
+
 ## License of range-v3
 _
 ### [range-v3](https://github.com/ericniebler/range-v3/)
