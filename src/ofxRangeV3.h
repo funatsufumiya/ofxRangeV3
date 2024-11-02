@@ -3,7 +3,13 @@
 #undef PI
 #endif
 
-#include <range/v3/all.hpp>
+#if defined(__cpp_lib_ranges) && __cpp_lib_ranges >= 201911L
+    #include <ranges>
+    namespace ranges = std::ranges;
+#else
+    #include <range/v3/all.hpp>
+    //namespace ranges = ::ranges;
+#endif
 
 #pragma mark oF compatible
 
